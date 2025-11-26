@@ -1,4 +1,6 @@
-//your JS code here. If required.
 function convertToUpper() {
-  document.getElementById("fname").value =
-    document.getElementById("fname").value.toUpperCase();
+  const input = document.getElementById("fname");
+  input.value = input.value.toUpperCase();
+}
+
+document.getElementById("fname").addEventListener("blur", convertToUpper);
